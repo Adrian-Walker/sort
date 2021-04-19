@@ -9,5 +9,24 @@ ages.sort((a,b) => b - a)
 console.log(ages)
 
 // 3.)
+const items = ['iPhone', 'Macbook', 'Ps5', 'Book', 'Pants']
+items.sort((a, b) =>  a.length - b.length)
+console.log(items)
+
+// 4.)
 const sports = ["football", "baseball", "basketball", "soccer", "golf"]
-sports.sort((a,b) => b - a )
+sports.sort()
+console.log(sports)
+
+// 5.)
+const thesePeople = [
+    {name: "Jeff", age: 19},
+    {name: "Jon", age: 33},
+    {name: "Tim", age: 82},
+    {name: "Joel", age: 2},
+    {name: "Sebastian", age: 108},
+]
+const result = thesePeople.sort(thePeople = (a,b) => {
+    return a.age - b.age
+})
+console.log(result)
